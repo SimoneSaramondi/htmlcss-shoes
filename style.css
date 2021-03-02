@@ -45,6 +45,7 @@ nav ul li{
     line-height: 30px;
     border-radius: 50%;
 }
+/* Nav va solo per il rosso*/
 nav{
     position: fixed;
     width: 100%;
