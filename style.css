@@ -8,17 +8,16 @@ div.box-red{
     background-color: red;
     position:relative;
 }
-.box-green{
+div.box-green{
     height: 100vh;
     background-color: green;
     position: relative;
 }
-.box-yellow{
+div.box-yellow{
     height: 100vh;
     background-color: yellow;
     position: relative;
 } 
-
 div img{
    width: 40%;
 }
@@ -45,9 +44,9 @@ nav ul li{
     line-height: 30px;
     border-radius: 50%;
 }
-/* Nav va solo per il rosso*/
 nav{
     position: fixed;
+    z-index: 1;
     width: 100%;
     text-align: right;
 }
