@@ -4,25 +4,23 @@
     box-sizing: border-box;
 }
 div.box-red{
-    width: 100%;
     height: 100vh;
     background-color: red;
-   
+    position:relative;
 }
 .box-green{
-    width: 100%;
     height: 100vh;
     background-color: green;
+    position: relative;
 }
 .box-yellow{
-    width: 100%;
     height: 100vh;
     background-color: yellow;
-}
-/*Mettere al centro le immagini senza margin*/
-img{
-   width: 50%;
-    margin-left: 20%; 
+    position: relative;
+} 
+
+div img{
+   width: 40%;
 }
 .primo,
 .secondo{
@@ -31,18 +29,15 @@ img{
     font-family: 'Oi', cursive;
     color: yellow;
 }
-/*Rimane spazio sotto*/
 .terzo{
     text-align: center;
     line-height: 50vh;
     font-family: 'Oi', cursive;
     color: green;
 }
-/*I numeri vanno spostati a DX*/
 nav ul li{
-    display: inline;
+    display: inline-block;
     margin: 10px;
-    float: left;
     width: 30px;
     height: 30px;
     background-color: white;
@@ -52,9 +47,51 @@ nav ul li{
 }
 nav{
     position: fixed;
-    float: right;
+    width: 100%;
+    text-align: right;
 }
 a{
     text-decoration: none;
     color: black;
+}
+h1{
+    width: 60%;
+    margin: auto;
+    height: 10vh;
+}
+.box-red h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box-green h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box-yellow h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box-red img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+.box-green img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+.box-yellow img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
 }
